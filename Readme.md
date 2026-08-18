@@ -17,7 +17,6 @@ Instead of treating data as static snapshots, we adopted a time-series forecasti
 - `notebooks/`: Contains the main Jupyter Notebook (`Sepsis_Detection_Colab.ipynb`) with the full data pipeline and model training code.
 - `models/`: Contains the trained models in `.pkl` format (Random Forest, XGBoost, and Advanced XGBoost).
 - `figures/`: Contains visualizations of the model's performance and clinical impact.
-- `reports/`: Contains the comprehensive study report and presentation PDFs detailing our methodology and findings.
 
 ## Key Results and Clinical Impact
 
