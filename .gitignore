@@ -17,17 +17,15 @@ ENV/
 Thumbs.db
 desktop.ini
 
-# Large datasets & raw files (Do not upload to GitHub)
-data/
+# Raw PSV files & raw PhysioNet folder (40k+ files; can be fetched via scripts/download_physionet.py)
+data/PhysioNet_Challenge2019/
 *.psv
-*.csv
-!reports/*.csv
 
 # Large binary NumPy arrays & caches
 *.npy
 *.npz
 
-# LaTeX and PDF documents (Excluded per publication requirements)
+# LaTeX and PDF documents
 *.pdf
 *.tex
 *.latex
@@ -43,7 +41,6 @@ data/
 
 # Documents, slide decks, and archives
 docs/
-*.zip
 *.tar.gz
 *.rar
 *.7z

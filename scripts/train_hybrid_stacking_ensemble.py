@@ -48,7 +48,16 @@ print("HETEROGENEOUS STACKING ENSEMBLE PIPELINE (SUPER LEARNER)")
 print("=" * 70)
 
 # Load dataset
-csv_path = "Sepsis_Detection_Project/processed_sepsis_data_FULL.csv"
+candidate_paths = [
+    "data/processed_sepsis_data_FULL.csv",
+    "data/processed_sepsis_data_FULL.csv.gz",
+    "processed_sepsis_data_FULL.csv",
+    "processed_sepsis_data_FULL.csv.gz",
+    "Sepsis_Detection_Project/processed_sepsis_data_FULL.csv",
+    "/content/drive/MyDrive/Sepsis_Detection_Project/processed_sepsis_data_FULL.csv",
+]
+csv_path = next((p for p in candidate_paths if os.path.exists(p)), "data/processed_sepsis_data_FULL.csv")
+print(f"Loading dataset from: {csv_path}")
 t0 = time.time()
 df = pd.read_csv(csv_path)
 

@@ -47,6 +47,10 @@ DM-Project/
 │   ├── utility_vs_threshold.png         # Clinical utility vs threshold curves
 │   └── vitals_distribution.png          # Physiological parameter distributions
 │
+├── data/                                # Clean Project Datasets
+│   ├── processed_sepsis_data_FULL.csv   # Combined 1.55M preprocessed dataset (Git LFS)
+│   └── processed_sepsis_data_FULL.csv.gz# Compressed dataset (direct download & pandas support)
+│
 ├── notebooks/                           # Jupyter & Colab Notebooks
 │   ├── Sepsis_SuperLearner_Publication_Colab.ipynb # Primary publication notebook
 │   └── Sepsis_Detection_Colab_legacy.ipynb        # Archived early baseline version
