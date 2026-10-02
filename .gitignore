@@ -25,7 +25,13 @@ data/PhysioNet_Challenge2019/
 *.npy
 *.npz
 
-# LaTeX intermediate auxiliary files (Keep manuscript source and PDF)
+# Paper manuscript, LaTeX, and PDF files (strictly local only)
+*.pdf
+*.tex
+*.cls
+*.sty
+paper_*
+manuscript*
 *.aux
 *.log
 *.bbl

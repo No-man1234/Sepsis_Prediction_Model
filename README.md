@@ -32,8 +32,6 @@ DM-Project/
 ├── Sepsis_SuperLearner_Publication_Colab.ipynb # Primary Colab Jupyter notebook
 ├── README.md                            # Project documentation & guide
 ├── requirements.txt                     # Project dependencies
-├── paper_manuscript.tex                 # IEEE conference manuscript (LaTeX)
-├── IEEEtran.cls                         # IEEE LaTeX document class
 │
 ├── figures/                             # 300 DPI Publication-Grade Figures (Stacking Super-Learner)
 │   ├── system_architecture.png          # System architecture diagram (Figure 1)
