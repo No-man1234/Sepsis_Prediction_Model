@@ -3,7 +3,7 @@
 
 **Authors:** Abdullah Al Noman, Md. Zawad Al Mahir, Md. Rakibul Islam, Mahathir Mohammad  
 *Department of Computer Science and Engineering, United International University, Dhaka, Bangladesh*  
-*Corresponding Email:* `md.zawadalmahir12554@gmail.com`
+*Corresponding Email:* `iamnoman.swe@gmail.com`
 
 ---
 
