@@ -14,7 +14,7 @@ This repository contains the publication-grade codebase, experimental benchmarks
 * **AUROC:** **`0.8060`** on an independent holdout test cohort of $8,067$ unseen patients ($308,785$ hourly records).
 * **Official PhysioNet 2019 Clinical Utility Score ($U_{norm}$):** **`0.3435`** (matches top international challenge benchmarks).
 * **Probability Calibration:** Reduced Brier loss from $0.1258$ to **`0.0169`** using Platt scaling.
-* **Clinical Lead Time:** Detected **74.5%** of sepsis cases early or on-time with a **median lead time of 29.5 hours** (mean 50.3 hours) before overt clinical diagnosis.
+* **Clinical Lead Time:** Delivers early warning alarms with a **median advance lead time of 31.5 hours** (mean 51.2 hours) prior to overt clinical diagnosis across 577 unseen sepsis patients.
 * **Multi-Paradigm Stacking:** Fuses 5 distinct model paradigms:
   1. *Linear Discriminative:* $L_2$ Logistic Regression
   2. *Bootstrap Bagging:* Random Forest (100 Trees)
@@ -32,20 +32,18 @@ DM-Project/
 ├── Sepsis_SuperLearner_Publication_Colab.ipynb # Primary Colab Jupyter notebook
 ├── README.md                            # Project documentation & guide
 ├── requirements.txt                     # Project dependencies
+├── paper_manuscript.tex                 # IEEE conference manuscript (LaTeX)
+├── IEEEtran.cls                         # IEEE LaTeX document class
 │
-├── figures/                             # 300 DPI Publication-Grade Figures
+├── figures/                             # 300 DPI Publication-Grade Figures (Stacking Super-Learner)
 │   ├── system_architecture.png          # System architecture diagram (Figure 1)
-│   ├── master_stacking_roc_comparison.png # Multi-model ROC curves
-│   ├── precision_recall_curve.png       # Precision-Recall curves
-│   ├── ablation_study_chart.png         # Feature engineering ablation bar chart
-│   ├── calibration_curve.png            # Platt calibration reliability diagram
-│   ├── decision_curve_analysis.png      # Net clinical benefit curves (DCA)
-│   ├── early_warning_distribution.png   # Lead time histogram & KDE distribution
-│   ├── patient_simulation_early_warning.png # Real-time patient monitoring trajectory
-│   ├── shap_summary.png                 # Game-theoretic SHAP feature impact
-│   ├── confusion_matrices.png           # Multi-model confusion matrices
-│   ├── utility_vs_threshold.png         # Clinical utility vs threshold curves
-│   └── vitals_distribution.png          # Physiological parameter distributions
+│   ├── master_stacking_roc_comparison.png # Multi-model ROC curves (Figure 2)
+│   ├── precision_recall_curve.png       # Precision-Recall curves (Figure 3)
+│   ├── calibration_curve.png            # Platt calibration reliability diagram (Figure 4)
+│   ├── decision_curve_analysis.png      # Net clinical benefit curves (DCA) (Figure 5)
+│   ├── early_warning_distribution.png   # Lead time histogram & KDE distribution (Figure 6)
+│   ├── shap_summary.png                 # Game-theoretic SHAP feature impact (Figure 7)
+│   └── legacy/                          # Archived early exploratory / single-model plots
 │
 ├── data/                                # Clean Project Datasets
 │   ├── processed_sepsis_data_FULL.csv   # Combined 1.55M preprocessed dataset (Git LFS)
