@@ -1,5 +1,55 @@
-*.csv
-*.zip
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints & virtual environments
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS generated files
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Large datasets & raw files (Do not upload to GitHub)
+data/
+*.psv
+*.csv
+!reports/*.csv
+
+# Large binary NumPy arrays & caches
+*.npy
+*.npz
+
+# LaTeX and PDF documents (Excluded per publication requirements)
+*.pdf
+*.tex
+*.latex
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Documents, slide decks, and archives
+docs/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pptx
+*.docx
+*.xlsx
+
+# Scratch & archive generator scripts
+scripts/archive/

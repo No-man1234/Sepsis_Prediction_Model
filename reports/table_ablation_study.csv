@@ -1,0 +1,5 @@
+Configuration,Features,AUROC,AUPRC,Recall,Precision,F1-Score,PhysioNet Utility
+Config 1: Raw Features (Unweighted XGB),14,0.7966,0.0989,0.0118,0.2982,0.0227,0.0108
+Config 2: Raw Features + Class Weighting,14,0.7868,0.093,0.5895,0.0618,0.1119,0.3342
+Config 3: Static + 3h Trends + Class Weighting,19,0.7884,0.0926,0.5801,0.0615,0.1113,0.3279
+Config 4: Full Proposed (6h Volatility & Extremes),40,0.7996,0.0993,0.5828,0.0647,0.1165,0.3423
